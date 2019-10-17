@@ -1,134 +1,205 @@
-<!DOCTYPE html>
-<html>
-<title>W3.CSS Template</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<style>
-body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
-</style>
-<body class="w3-light-grey">
-
-<!-- w3-content defines a container for fixed size centered content, 
-and is wrapped around the whole page content, except for the footer in this example -->
-<div class="w3-content" style="max-width:1400px">
-
-<!-- Header -->
-<header class="w3-container w3-center w3-padding-32"> 
-  <h1><b>MY BLOG</b></h1>
-  <p>Welcome to the blog of <span class="w3-tag">unknown</span></p>
-</header>
-
-<!-- Grid -->
-<div class="w3-row">
-
-<!-- Blog entries -->
-<div class="w3-col l8 s12">
-  <!-- Blog entry -->
-  <div class="w3-card-4 w3-margin w3-white">
-    <img src="/w3images/woods.jpg" alt="Nature" style="width:100%">
-    <div class="w3-container">
-      <h3><b>TITLE HEADING</b></h3>
-      <h5>Title description, <span class="w3-opacity">April 7, 2014</span></h5>
-    </div>
-
-    <div class="w3-container">
-      <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed
-        tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-      <div class="w3-row">
-        <div class="w3-col m8 s12">
-          <p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>
-        </div>
-        <div class="w3-col m4 w3-hide-small">
-          <p><span class="w3-padding-large w3-right"><b>Comments  </b> <span class="w3-tag">0</span></span></p>
+<body>
+    <link rel="stylesheet" type="text/css" href="..\css\style.css">
+    <script src="js/blog.js"></script>
+    <!-- navbar header -->
+    <div class="nav-header">
+      <div class="nav-brand">
+        <img src="https://s3-us-west-2.amazonaws.com/parallax-theme/assets/bradlogo2.png">
+      </div>
+      <i class="fa fa-bars fa-3x"></i>
+        <div class="header-links">
+          <ul>
+            <li data-menuanchor="fourthPage"><a href="#contact">CONTACT</a></li>
+            <li data-menuanchor="thirdPage"><a href="#portfolio">PORTFOLIO</a></li>
+            <li data-menuanchor="secondPage"><a href="#about">ABOUT</a></li>
+          </ul>
         </div>
       </div>
     </div>
-  </div>
-  <hr>
+    <!-- end navbar header -->
 
-  <!-- Blog entry -->
-  <div class="w3-card-4 w3-margin w3-white">
-  <img src="/w3images/bridge.jpg" alt="Norway" style="width:100%">
-    <div class="w3-container">
-      <h3><b>BLOG ENTRY</b></h3>
-      <h5>Title description, <span class="w3-opacity">April 2, 2014</span></h5>
-    </div>
-
-    <div class="w3-container">
-      <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed
-        tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-      <div class="w3-row">
-        <div class="w3-col m8 s12">
-          <p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>
-        </div>
-        <div class="w3-col m4 w3-hide-small">
-          <p><span class="w3-padding-large w3-right"><b>Comments  </b> <span class="w3-badge">2</span></span></p>
+    
+    <!-- sidebar slider -->
+    <div class="nav-screen">
+      <i class="fa fa-times fa-3x"></i>
+      <div class="nav-container">
+        <div class="nav-links">
+          <ul id='myMenu'>
+            <li data-menuanchor="secondPage" ><a href="#about" style="color:rgb(15, 15, 15)">ABOUT</a></li>
+            <li data-menuanchor="thirdPage"><a href="#portfolio">PORTFOLIO</a></li>
+            <li data-menuanchor="fourthPage"><a href="#contact">CONTACT</a></li>
+          </ul>
         </div>
       </div>
     </div>
-  </div>
-<!-- END BLOG ENTRIES -->
-</div>
-
-<!-- Introduction menu -->
-<div class="w3-col l4">
-  <!-- About Card -->
-  <div class="w3-card w3-margin w3-margin-top">
-  <img src="/w3images/avatar_g.jpg" style="width:100%">
-    <div class="w3-container w3-white">
-      <h4><b>My Name</b></h4>
-      <p>Just me, myself and I, exploring the universe of uknownment. I have a heart of love and a interest of lorem ipsum and mauris neque quam blog. I want to share my world with you.</p>
+    <!-- end navbar slider -->
+    
+      
+    
+    <!-- begin fullpage -->
+    
+    <div id="fullpage">
+    
+      <!-- begin section -->
+    
+      <div class="section aboutme" data-anchor="aboutme">
+        <div class="opaque-bg animated fadeInDown">
+          <h1 style="color:white">Nishant<span style="color:#FF6363">/</span>Kapoor</h1>
+          <p><span id="holder"></span><span class="blinking-cursor">|</span></p>
+        </div>
+          <i id="moveDown" class="fa fa-chevron-down fa-3x bounce"></i>
+      </div>
+      <!-- end section -->
+    
+      <!-- begin section -->
+    
+      <div class="section" data-anchor="skills">
+        <div class="content">
+          <h1 class="wow fadeInDown" data-wow-delay="0.2s">ABOUT ME</h1>
+          <p class="wow fadeInDown" data-wow-delay="0.2s">Hi, I'm NIshant Kapoor! </p>
+    
+          <div class=" wow fadeInUp container-skillbar" data-wow-delay="0.2s">
+            <div class="skillbar clearfix " data-percent="90%">
+              <div class="skillbar-title" style="background: #DD1E2F;"><span>HTML5</span></div>
+              <div class="skillbar-bar" style="background: #DD1E2F;"></div>
+              <div class="skill-bar-percent">90%</div>
+            </div> <!-- End Skill Bar -->
+    
+            <div class="skillbar clearfix " data-percent="80%">
+              <div class="skillbar-title" style="background: #EBB035;"><span>CSS3</span></div>
+              <div class="skillbar-bar" style="background: #EBB035;"></div>
+              <div class="skill-bar-percent">80%</div>
+            </div> <!-- End Skill Bar -->
+    
+            <div class="skillbar clearfix " data-percent="75%">
+              <div class="skillbar-title" style="background: #218559;"><span>Photoshop</span></div>
+              <div class="skillbar-bar" style="background: #218559;"></div>
+              <div class="skill-bar-percent">75%</div>
+            </div> <!-- End Skill Bar -->
+    
+            <div class="skillbar clearfix " data-percent="45%">
+              <div class="skillbar-title" style="background: #6840D4;"><span>Rails</span></div>
+              <div class="skillbar-bar" style="background: #6840D4;"></div>
+              <div class="skill-bar-percent">45%</div>
+            </div> <!-- End Skill Bar -->
+    
+            <div class="skillbar clearfix " data-percent="30%">
+              <div class="skillbar-title" style="background: #06A2CB;"><span>jQuery</span></div>
+              <div class="skillbar-bar" style="background: #06A2CB;"></div>
+              <div class="skill-bar-percent">30%</div>
+            </div> <!-- End Skill Bar -->
+    
+            <div class="skillbar clearfix " data-percent="20%">
+              <div class="skillbar-title" style="background: #AB4DD2;"><span>PHP</span></div>
+              <div class="skillbar-bar" style="background: #AB4DD2;"></div>
+              <div class="skill-bar-percent">20%</div>
+            </div> <!-- End Skill Bar -->
+          </div>
+        </div>
+      </div>
+      <!-- end section -->
+    
+      <!-- begin section -->
+    
+      <div class="section" data-anchor="projects">
+        <div class="content-slide">
+            <div class="slide">
+              <h1 class="wow fadeInDown" data-wow-delay="0.2s">XFAIRE</h1>
+              <p class="wow fadeInDown" data-wow-delay="0.2s">Digital streaming service</p>
+              <img class="wow fadeInUp" data-wow-delay="0.2s" data-src="https://s3-us-west-2.amazonaws.com/bradengelhardt/assets/xfaire.jpg">
+            </div>
+            <div class="slide">
+              <h1>MACHETE ENERGY</h1>
+              <p>Energy drink website</p>
+              <img data-src="https://s3-us-west-2.amazonaws.com/bradengelhardt/assets/machete.jpg">
+            </div>
+            <div class="slide">
+              <h1>PORTFOLIO</h1>
+              <p>Mockup of a personal portfolio I was working on for a friend.</p>
+              <img data-src="https://s3-us-west-2.amazonaws.com/bradengelhardt/assets/cascioportfolio.jpg">
+            </div>
+            <div class="slide">
+              <h1>THATONEBLOG</h1>
+              <p>Minimalist blogging platform.</p>
+              <img data-src="https://s3-us-west-2.amazonaws.com/bradengelhardt/assets/blog.jpg">
+            </div>
+            <div class="slide">
+              <h1>PIXBORED</h1>
+              <p>Website for sharing images and gifs.</p>
+              <img data-src="https://s3-us-west-2.amazonaws.com/bradengelhardt/assets/pixbored.jpg">
+            </div>
+            <div class="slide">
+              <h1>PERSONAL WEBSITE</h1>
+              <p>Responsive vertical/horizontal header website theme.</p>
+              <img data-src="https://s3-us-west-2.amazonaws.com/bradengelhardt/assets/personalsite.jpg">
+            </div>
+        </div>
+      </div>
+      <!-- end section -->
+    
+      <!-- begin section -->
+    
+      <div class="section" data-anchor="contact">
+        <div class="content wow fadeInDown" data-wow-delay="0.2s">
+          <h1>CONTACT ME</h1>
+            <p>Whether you're interested in working with me or just want to say hello, I'd love to hear from you!</p>
+            <br>
+          <div class="contact-form">
+    
+            <div id="form-messages"></div>
+            <form id="ajax-contact" method="post" role="form" action="contact.php" data-toggle="validator">
+              <div class="form-group has-feedback wow fadeInLeft" data-wow-delay="0.6s" >
+                <input type="text" class="form-control" id="name" name="name" placeholder="NAME" data-error="Field can't be blank!" required>
+                <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+                <div class="help-block with-errors"></div>
+              </div>
+    
+              <div class="form-group has-feedback wow fadeInRight" data-wow-delay="0.8s" >
+                <input type="email" class="form-control" id="email" name="email" placeholder="EMAIL" data-error="Field can't be blank!" required>
+                <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+                <div class="help-block with-errors"></div>
+              </div>
+    
+              <div class="form-group has-feedback wow fadeInLeft" data-wow-delay="1s">
+                <textarea data-minlength="10" class="form-control" id ="message" name="message" placeholder="MESSAGE" data-error="Minimum of 10 characters" required></textarea>
+                <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+                <div class="help-block with-errors"></div>
+              </div>
+    
+              <div class="hidden">
+                <input type="text" class="form-control" id="human" name="human" placeholder="">
+              </div>
+              <div class="wow fadeInUp" data-wow-delay="1s">
+                <button type="submit" id="submit" name="submit" class="btn btn-lg">SEND MESSAGE</button>
+              </div>
+            </form> 
+          <br>
+          </div>
+      </div>
+     </div>
+     <!-- end section -->
+    
+      <!-- begin section -->
+    
+      <div class="section fp-auto-height">
+        <div class="footer">
+          <p>CONNECT WITH ME</p>
+          <div class="social-links">
+            <span><a href="https://www.linkedin.com/in/bradleyengelhardt" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a></span>
+            <span><a target="_blank" href="https://twitter.com/bradengelhardt" target="_blank"><i class="fa fa-twitter fa-2x"></i></a></span>
+            <span><a href="https://github.com/SquishyAndroid" target="_blank"><i class="fa fa-github fa-2x"></i></a></span>
+            <span><a href="https://codepen.io/SquishyAndroid/pens/public/"><i class="fa fa-codepen fa-2x"></i></a></span>
+          </div>
+        </div>
+      </div>
+      <!-- end section -->
+    
     </div>
-  </div><hr>
-  
-  <!-- Posts -->
-  <div class="w3-card w3-margin">
-    <div class="w3-container w3-padding">
-      <h4>Popular Posts</h4>
-    </div>
-    <ul class="w3-ul w3-hoverable w3-white">
-      <li class="w3-padding-16">
-        <img src="/w3images/workshop.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
-        <span class="w3-large">Lorem</span><br>
-        <span>Sed mattis nunc</span>
-      </li>
-      <li class="w3-padding-16">
-        <img src="/w3images/gondol.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
-        <span class="w3-large">Ipsum</span><br>
-        <span>Praes tinci sed</span>
-      </li> 
-      <li class="w3-padding-16">
-        <img src="/w3images/skies.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
-        <span class="w3-large">Dorum</span><br>
-        <span>Ultricies congue</span>
-      </li>   
-      <li class="w3-padding-16 w3-hide-medium w3-hide-small">
-        <img src="/w3images/rock.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
-        <span class="w3-large">Mingsum</span><br>
-        <span>Lorem ipsum dipsum</span>
-      </li>  
-    </ul>
-  </div>
-  <hr> 
- 
-  <!-- Labels / tags -->
-  <div class="w3-card w3-margin">
-    <div class="w3-container w3-padding">
-      <h4>Tags</h4>
-    </div>
-    <div class="w3-container w3-white">
-    <p><span class="w3-tag w3-black w3-margin-bottom">Travel</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">New York</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">London</span>
-      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">IKEA</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">NORWAY</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">DIY</span>
-      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Ideas</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Baby</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Family</span>
-      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">News</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Clothing</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Shopping</span>
-      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Sports</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Games</span>
-    </p>
-    </div>
-  </div>
-  
-
-
-</body>
-</html>
+    <!-- end fullpage -->
+    
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/parallax-theme/assets/wow.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.4/jquery.fullPage.min.js"></script>
+    </body>
+    
